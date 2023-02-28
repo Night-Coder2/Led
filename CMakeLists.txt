@@ -1,12 +1,12 @@
-set(LED_CPP_CLASS .)
+set(LED_LIB .)
 
 add_library(Led
         Led.cpp
         )
 
 target_include_directories(Led PUBLIC
-        ${LED_CPP_CLASS}
-        ${LED_CPP_CLASS}/include
+        ${LED_LIB}
+        ${LED_LIB}/include
         )
 
 target_link_libraries(Led pico_stdlib)
